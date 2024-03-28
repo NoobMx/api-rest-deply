@@ -8,7 +8,7 @@ GET http://localhost:3000/movies/ccf36f2e-8566-47f7-912d-9f4647250bc7
 GET http://localhost:3000/movies/1
 
 ### Recuperar una pelicula por género ****
-GET http://localhost:3000/movies?genre=Fantasy
+GET http://localhost:3000/movies?genre=Action
 ### Crear una pelicula CON POST
 POST http://localhost:3000/movies
 Content-Type: application/json
@@ -54,6 +54,9 @@ Content-Type: application/json
     "Sci-Fi"
   ]
 }
+
+### Borrar una pelicula por id
+DELETE http://localhost:3000/movies/ed0e3a58-78c4-449e-a1d4-7e0202d6045b
 
 ### Actualizar una pelicula por id
 PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
